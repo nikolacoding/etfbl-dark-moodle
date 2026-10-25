@@ -4,7 +4,7 @@
 Preuzmi `.zip` fajl i **otpakuj (unzip)** ga na računaru.
 
 ### 2. Otvori Extensions (Chrome, Brave, Opera...)
-U adresnu traku ukucaj `chrome://extensions/` i pritisni **Enter**.
+U adresnu traku ukucaj (ili prosto kopiraj) `chrome://extensions/` i pritisni **Enter**.
 
 ### 3. Uključi Developer mode
 U gornjem desnom (ili lijevom) uglu stranice uključi **Developer mode**.
