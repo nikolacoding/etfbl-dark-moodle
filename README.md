@@ -1,9 +1,9 @@
-# Instalacija (brzo i jednostavno vjerujte mi):
+# Instalacija (brzo i jednostavno):
 
 ### 1. Skini i otpakuj
 Preuzmi `.zip` fajl i **otpakuj (unzip)** ga na računaru.
 
-### 2. Otvori Extensions (radi na Chrome, Brave, Opera...)
+### 2. Otvori Extensions (Chrome, Brave, Opera...)
 U adresnu traku ukucaj `chrome://extensions/` i pritisni **Enter**.
 
 ### 3. Uključi Developer mode
