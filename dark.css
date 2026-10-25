@@ -1,0 +1,228 @@
+/* ==========================================================================
+   1. GLOBALNO
+   ========================================================================== */
+html, body, #page, #page-wrapper, #region-main, #nav-drawer {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* glavni blokovi */
+.card, .block, nav, .navbar, .drawer, table, td, th {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border-color: #2a2a2a !important;
+}
+
+/* linkovi */
+a {
+    color: #38bdf8 !important;
+    transition: color 0.2s ease !important;
+}
+
+a:hover {
+    color: #7dd3fc !important;
+}
+
+/* ==========================================================================
+   2. GORNJI NAVBAR I BLISKI ELEMENTI
+   ========================================================================== */
+nav.fixed-top,
+.navbar.bg-white {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #2e2e2e !important;
+}
+
+nav.fixed-top a,
+nav.fixed-top .nav-link,
+nav.fixed-top .navbar-brand,
+nav.fixed-top span,
+nav.fixed-top i,
+nav.fixed-top .icon {
+    color: #d1d5db !important;
+}
+
+nav.fixed-top a:hover,
+nav.fixed-top .nav-link:hover {
+    color: #38bdf8 !important;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* fix za odvratno dizajniran bocni meni */
+[data-region="drawer-toggle"],
+[data-region="drawer-toggle"] button,
+[data-region="drawer-toggle"] .btn {
+    background-color: #242424 !important;
+    color: #d1d5db !important;
+    border-color: #333333 !important;
+}
+
+[data-region="drawer-toggle"]:hover,
+[data-region="drawer-toggle"] button:hover,
+[data-region="drawer-toggle"] .btn:hover {
+    background-color: #2e2e2e !important;
+    color: #ffffff !important;
+}
+
+[data-region="drawer-toggle"] i,
+[data-region="drawer-toggle"] .icon,
+[data-region="drawer-toggle"] span {
+    color: #d1d5db !important;
+}
+
+/* ==========================================================================
+   3. BOCNI MENI
+   ========================================================================== */
+.list-group-item,
+.list-group-item-action {
+    background-color: #1e1e1e !important;
+    color: #d1d5db !important;
+    border-color: #2a2a2a !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+/* hover efekat (odnosi se i na ikonice) */
+.list-group-item-action:hover,
+.list-group-item-action:focus,
+.list-group-item:hover {
+    background-color: #262626 !important;
+    color: #ffffff !important;
+}
+
+.list-group-item-action:hover i,
+.list-group-item-action:hover .icon,
+.list-group-item:hover i {
+    color: #38bdf8 !important;
+}
+
+/* post-click efekat (trenutna stranica) */
+.list-group-item.active,
+.list-group-item[data-isactive="1"] {
+    background-color: #262626 !important;
+    color: #fb923c !important;
+    font-weight: 600 !important;
+    border-left: 4px solid #fb923c !important;
+}
+
+.list-group-item.active i,
+.list-group-item[data-isactive="1"] i {
+    color: #fb923c !important;
+}
+
+/* ==========================================================================
+   4. LISTA KURSEVA
+   ========================================================================== */
+.coursebox {
+    border: 1px solid #2a2a2a !important;
+    margin-bottom: 8px !important;
+    padding: 12px !important;
+    border-radius: 6px !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/*  naizmjenicne nijanse */
+.coursebox.even {
+    background-color: #171717 !important;
+}
+
+.coursebox.odd {
+    background-color: #202020 !important;
+}
+
+.coursebox:hover {
+    background-color: #282828 !important;
+    border-color: #3b3b3b !important;
+}
+
+.coursebox .coursename a {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+}
+
+.coursebox .coursename a:hover {
+    color: #7dd3fc !important;
+}
+
+.coursebox .summary,
+.coursebox .content,
+.coursebox .teachers,
+.coursebox .moreinfo {
+    color: #a3a3a3 !important;
+}
+
+/* ==========================================================================
+   5. FORME, INPUTI, PADAJUCI MENIJI
+   ========================================================================== */
+input[name="q"],
+input[id^="searchinput-"],
+.form-control,
+nav.fixed-top .dropdown-menu {
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    border: 1px solid #3b3b3b !important;
+}
+
+input[name="q"]::placeholder,
+input[id^="searchinput-"]::placeholder,
+.form-control::placeholder {
+    color: #888888 !important;
+    opacity: 1 !important;
+}
+
+/* okvir pri fokusu i kucanju */
+input[name="q"]:focus,
+input[id^="searchinput-"]:focus,
+.form-control:focus {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.2) !important;
+}
+
+/* ==========================================================================
+   6. FINESE (DORADA RUZNOG HAJLAJTA PRI KLIKU)
+   ========================================================================== */
+
+/* 1. sredjivanje pravougaonika pri kliku */
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* 2. sredjivanje nezeljene pozadine i sjaja kod kurseva */
+a:focus,
+a:active,
+.coursebox:focus,
+.coursebox:active,
+.coursebox:focus-within,
+.coursebox .coursename a:focus,
+.coursebox .coursename a:active {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. sredjivanje selektovanog teksta mišem (da ne bude bijela/plava) */
+::selection {
+    background-color: #fb923c !important;
+    color: #121212 !important;
+}
+::-moz-selection {
+    background-color: #fb923c !important;
+    color: #121212 !important;
+}
+
+/* popravka za <pre> i <code> blokove (problem sa RM, ISZ, PS...) */
+pre,
+code,
+pre span,
+code span {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+/* ocuvanje boje za linkove i ostale vec sredjene elemente u <pre> bloku */
+pre a,
+code a {
+    color: #38bdf8 !important;
+}

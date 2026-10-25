@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ETFBL E-Learning Dark Mode",
+  "version": "1.0",
+  "description": "Tamna tema za ETFBL Moodle.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://el.etfbl.net/*"
+      ],
+      "css": ["dark.css"]
+    }
+  ]
+}
