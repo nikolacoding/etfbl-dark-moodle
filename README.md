@@ -1,7 +1,7 @@
 # Instalacija (brzo i jednostavno):
 
 ### 1. Skini i otpakuj
-Preuzmi `.zip` fajl i **otpakuj (unzip)** ga na računaru.
+Iz **Releases** menija s desne strane preuzmi fajl `etfbl-dark-moodle.rar` i **otpakuj (unzip)** ga na računaru.
 
 ### 2. Otvori Extensions (Chrome, Brave, Opera...)
 U adresnu traku ukucaj (ili prosto kopiraj) `chrome://extensions/` i pritisni **Enter**.
