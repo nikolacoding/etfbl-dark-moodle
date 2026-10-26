@@ -8,7 +8,7 @@ html, body, .ui-mobile-viewport, .ui-page, [data-role="page"], .ui-page-theme-a 
     text-shadow: none !important;
 }
 
-/* Obavezno bojenje čitavog kontejnera zaglavlja i podnožja */
+/* bojenje kontejnera headera i footera */
 .ui-header,
 .ui-footer,
 [data-role="header"],
@@ -26,7 +26,7 @@ html, body, .ui-mobile-viewport, .ui-page, [data-role="page"], .ui-page-theme-a 
     text-shadow: none !important;
 }
 
-/* Uklanjanje posebne pozadine sa samog teksta naslova */
+/* uklanjanje posebne pozadine sa samog teksta naslova */
 .ui-title,
 h1.ui-title,
 .ui-header .ui-title,
@@ -42,7 +42,7 @@ h1.ui-title,
 }
 
 /* ==========================================================================
-   2. DROPDOWNOVI I SVIJETLI OKVIRI
+   2. DROPDOWNOVI
    ========================================================================== */
 .container-fluid,
 .row,
@@ -54,7 +54,7 @@ h1.ui-title,
     box-shadow: none !important;
 }
 
-/* Dugmad i dropdowni */
+/* dugmad i dropdowni */
 .ui-select .ui-btn,
 .ui-btn,
 #prostorija-button,
@@ -78,14 +78,14 @@ select {
     color: #ffffff !important;
 }
 
-/* Opcije u padajućem meniju pri kliku */
+/* padajuci meni (klik) */
 select option {
     background-color: #1e1e1e !important;
     color: #e0e0e0 !important;
 }
 
 /* ==========================================================================
-   3. TABELA RASPOREDA (#raspored)
+   3. TABELA RASPOREDA
    ========================================================================== */
 #raspored,
 .table-bordered {
@@ -94,7 +94,7 @@ select option {
     color: #e0e0e0 !important;
 }
 
-/* Zaglavlje tabele (Dani u sedmici) */
+/* zaglavlje tabele (pon-ned) */
 #raspored thead td,
 #raspored thead th {
     background-color: #1a1a1a !important;
@@ -104,7 +104,7 @@ select option {
     text-align: center !important;
 }
 
-/* Naizmjenični redovi u tabeli */
+/* naizmjenicni redovi */
 #raspored tbody tr:nth-child(even) td {
     background-color: #171717 !important;
 }
@@ -113,7 +113,7 @@ select option {
     background-color: #202020 !important;
 }
 
-/* Kolona sa vremenom */
+/* vremena */
 #raspored tbody td:first-child {
     background-color: #181818 !important;
     color: #fb923c !important;
@@ -121,7 +121,7 @@ select option {
     text-align: center !important;
 }
 
-/* Osnovne ćelije i glatka tranzicija */
+/* osnovne celije i glatka tranzicija */
 #raspored td,
 #raspored th,
 table td,
@@ -133,9 +133,9 @@ table th {
 }
 
 /* ==========================================================================
-   4. HOVER HIGHLIGHT ZA REDOVE (PREGAŽENA SPECIFIČNOST SA #raspored)
+   4. HOVER HIGHLIGHT ZA REDOVE
    ========================================================================== */
-/* Hover cijelog reda sa ID selektorom kako bi pregazio nth-child pravila */
+/* hover cijelog reda sa ID selektorom */
 #raspored tbody tr:hover td,
 table tr:hover td,
 .table tr:hover td,
@@ -144,13 +144,13 @@ table tr:hover td,
     color: #ffffff !important;
 }
 
-/* Posebno prilagođavanje prve kolone (satnica) tokom hovera nad redom */
+/* posebno prilagodjavanje prve kolone (sat) tokom hovera nad redom */
 #raspored tbody tr:hover td:first-child {
     background-color: #262d3a !important;
     color: #fb923c !important;
 }
 
-/* Linkovi unutar reda na hover */
+/* linkovi unutar reda na hover */
 #raspored tbody tr:hover td a,
 table tr:hover td a {
     color: #fb923c !important;

@@ -7,7 +7,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
 }
 
 /* ==========================================================================
-   2. VRH STRANICE (HEADER, JEZICI I BRZI MENI)
+   2. VRH STRANICE
    ========================================================================== */
 #header, #brzimeni {
     background-color: #1a1a1a !important;
@@ -23,7 +23,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
 }
 
 /* ==========================================================================
-   3. GLAVNI NAVIGACIONI MENI (#meni, #center, #gruemenu) - FIX ZA KRAJEVE
+   3. GLAVNI NAVIGACIONI MENI
    ========================================================================== */
 #meni,
 #center,
@@ -40,7 +40,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     box-shadow: none !important;
 }
 
-/* Stavke u meniju i njihove pozadine */
+/* stavke u meniju i njihove pozadine */
 #gruemenu ul,
 #gruemenu ul li,
 #gruemenu ul li a {
@@ -50,7 +50,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     border-color: #2e2e2e !important;
 }
 
-/* Pregaženje plavih trouglića/strelica u podmeniju */
+/* popravljanje odvratnih strelica u nadmeniju svake podstranice */
 #gruemenu.grue_133 > ul > li > ul::after {
     border-bottom-color: #1a1a1a !important;
 }
@@ -58,7 +58,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     border-right-color: #1a1a1a !important;
 }
 
-/* Hover i aktivna stanja (Narandžasti akcenat pri prelasku mišem) */
+/* akcenat i aktivna stanja */
 #gruemenu > ul > li:hover > a,
 #gruemenu > ul > li > a:hover,
 #gruemenu > ul > li.active > a,
@@ -69,7 +69,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     background-color: #242424 !important;
 }
 
-/* Padajući podmeniji */
+/* padajuci podmeniji */
 #gruemenu ul ul {
     background-color: #1a1a1a !important;
     border: 1px solid #2e2e2e !important;
@@ -77,7 +77,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
 }
 
 /* ==========================================================================
-   4. BOČNI MODULI I WIDGETI (.moduletable)
+   4. BOCNI MODULI
    ========================================================================== */
 .moduletable {
     background-color: #1a1a1a !important;
@@ -87,7 +87,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     margin-bottom: 20px !important;
 }
 
-/* Naslovi bočnih kartica (Servisi, ICT akademija, INDEL...) */
+/* naslovi bocnih modula */
 .moduletable h3 {
     color: #38bdf8 !important;
     border-bottom: 2px solid #2e2e2e !important;
@@ -97,7 +97,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     font-weight: 600 !important;
 }
 
-/* Meni stavke u bočnim karticama */
+/* stavke bocnih modula */
 .moduletable ul.nav.menu li a {
     color: #d1d5db !important;
     border-bottom: 1px solid #242424 !important;
@@ -110,7 +110,7 @@ html, body, .container, .row, .span12, .span6, .span3 {
     background-color: transparent !important;
 }
 
-/* Popravka za widget "Aktuelno" (Pregaženje inline svetlog gradijenta za datum) */
+/* fix za "aktuelno" */
 .moduletable .custom table td {
     background: #242424 !important;
     background-color: #242424 !important;
@@ -134,9 +134,9 @@ html, body, .container, .row, .span12, .span6, .span3 {
 }
 
 /* ==========================================================================
-   5. CENTRALNI DIO (REDIZAJN SEPCIJE NOVOSTI / MODERN DARK CARDS)
+   5. CENTRALNI DIO (novosti i okolno)
    ========================================================================== */
-/* Glavni naslov sekcije "Новости" */
+/* header novosti */
 article.item-page h1,
 .blog h1 {
     color: #f3f4f6 !important;
@@ -147,7 +147,7 @@ article.item-page h1,
     margin-bottom: 20px !important;
 }
 
-/* Kontejner liste novosti */
+/* kontejner sadrzaja novosti */
 ul.category-module.mod-list {
     display: flex !important;
     flex-direction: column !important;
@@ -157,7 +157,7 @@ ul.category-module.mod-list {
     list-style: none !important;
 }
 
-/* Kartica pojedinačne vijesti */
+/* sadrzaj pojedinacnih novosti */
 ul.category-module.mod-list li {
     background-color: #18181b !important;
     border: 1px solid #27272a !important;
@@ -172,7 +172,7 @@ ul.category-module.mod-list li:hover {
     border-color: #38bdf8 !important;
 }
 
-/* Naslov vijesti (prijatnija bela boja umesto neon plave, sa plavim hoverom) */
+/* naslovi novosti */
 .mod-articles-category-title {
     color: #f3f4f6 !important;
     font-weight: 600 !important;
@@ -188,7 +188,7 @@ ul.category-module.mod-list li:hover {
     text-decoration: none !important;
 }
 
-/* Datum objave - diskretniji narandžasti ton */
+/* datum novosti */
 .mod-articles-category-date {
     color: #fb923c !important;
     font-size: 0.85rem !important;
@@ -197,7 +197,7 @@ ul.category-module.mod-list li:hover {
     display: inline-block !important;
 }
 
-/* Uvodni tekst (uklanjanje neonskog okvira i ujednačavanje teksta) */
+/* uvodni tekst novosti */
 .mod-articles-category-introtext,
 p.mod-articles-category-introtext {
     color: #a1a1aa !important;
@@ -215,7 +215,7 @@ p.mod-articles-category-introtext {
 }
 
 /* ==========================================================================
-   6. FOOTER (PODNOŽJE)
+   6. FOOTER
    ========================================================================== */
 .row.dark,
 .custom_menu1 {
@@ -230,7 +230,7 @@ p.mod-articles-category-introtext {
 }
 
 /* ==========================================================================
-   7. BREADCRUMB (NUKLEARNI RESET - POTPUNO UKLANJANJE DVOSTRUKIH STRELICA)
+   7. BREADCRUMB
    ========================================================================== */
 #breadcrumbs,
 #breadcrumbs * {
@@ -246,7 +246,7 @@ p.mod-articles-category-introtext {
     margin: 0 0 15px 0 !important;
 }
 
-/* Glavni kontejner trake */
+/* glavni kontejner trake */
 .breadcrumb {
     display: block !important;
     background: #1a1a1a !important;
@@ -260,7 +260,7 @@ p.mod-articles-category-introtext {
     line-height: normal !important;
 }
 
-/* Potpuni reset svakog LI elementa (uklanjanje float-a i apsolutnog pozicioniranja) */
+/* reset svakog <li>-a */
 .breadcrumb li {
     display: inline-block !important;
     float: none !important;
@@ -276,7 +276,7 @@ p.mod-articles-category-introtext {
     line-height: 1.5 !important;
 }
 
-/* Potpuno sakrivanje ugrađenih Joomla dividera, ikona i grafika */
+/* sakrivanje ugradjenih dividera i dorada strelica */
 .breadcrumb .divider,
 .breadcrumb img,
 .breadcrumb i,
@@ -284,7 +284,6 @@ p.mod-articles-category-introtext {
     display: none !important;
 }
 
-/* Poništavanje svih naslijeđenih pseudo-strelica iz šablona */
 .breadcrumb li::before,
 .breadcrumb li::after,
 .breadcrumb a::before,
@@ -296,7 +295,7 @@ p.mod-articles-category-introtext {
     background: none !important;
 }
 
-/* Stilovi za linkove i tekst */
+/* linkovi i tekst */
 .breadcrumb li a,
 .breadcrumb li a.pathway,
 .breadcrumb li span {
@@ -324,7 +323,7 @@ p.mod-articles-category-introtext {
     font-weight: 400 !important;
 }
 
-/* ČISTI I JEDNOSTAVNI SEPARATOR (›) ISPRED SVAKOG SLEDEĆEG ELEMENTA */
+/* strelicenje */
 .breadcrumb li + li::before {
     content: "›" !important;
     display: inline-block !important;
@@ -335,7 +334,7 @@ p.mod-articles-category-introtext {
 }
 
 /* ==========================================================================
-   8. TEKST ČLANAKA, VIJESTI I PODSTRANICA
+   8. TEKST CLANAKA/PODSTRANICA
    ========================================================================== */
 .blog,
 .item-page,
@@ -358,7 +357,7 @@ p.mod-articles-category-introtext {
     border-bottom-color: #2e2e2e !important;
 }
 
-/* Svi paragrafi, tekstualni blokovi i bold slova */
+/* svi paragrafi, tekstualni blokovi i bold slova */
 .blog p,
 .blog span,
 .blog li,
@@ -374,14 +373,14 @@ p.mod-articles-category-introtext {
     color: #d1d5db !important;
 }
 
-/* Datum objave i ikone */
+/* datum objave i ikone */
 .article-info,
 .article-info dd,
 .published {
     color: #9ca3af !important;
 }
 
-/* Linkovi unutar teksta vijesti */
+/* linkovi unutar teksta vijesti */
 .blog p a,
 .blog li a,
 .item-page p a,
@@ -398,7 +397,7 @@ p.mod-articles-category-introtext {
     color: #fb923c !important;
 }
 
-/* Lista "Ostale novosti" ispod članaka */
+/* lista "ostale novosti" na dnu */
 .items-more ol.nav-tabs,
 .items-more li a {
     background-color: #1a1a1a !important;
@@ -412,7 +411,7 @@ p.mod-articles-category-introtext {
 }
 
 /* ==========================================================================
-   9. PAGINACIJA (Dugmad 1, 2, 3... na dnu)
+   9. PAGINACIJA (1, 2, 3... na dnu)
    ========================================================================== */
 .pagination ul > li > a,
 .pagination ul > li > span {
@@ -434,7 +433,7 @@ p.mod-articles-category-introtext {
 }
 
 /* ==========================================================================
-   10. TABELE NASTAVNIH PLANOVA I PREDMETA (.nastavni_plan) - OPTIMIZIRANA VELIČINA
+   10. TABELE PREDMETA
    ========================================================================== */
 table.nastavni_plan,
 .item-page table {
@@ -449,15 +448,15 @@ table.nastavni_plan,
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Ćelije s ugodnijim razmakom i blago većim fontom */
+/* celije */
 table.nastavni_plan th,
 table.nastavni_plan td,
 .item-page table th,
 .item-page table td {
-    padding: 12px 16px !important; /* Povećano s 10px 14px */
+    padding: 12px 16px !important;
     border-bottom: 1px solid #27272a !important;
     border-right: 1px solid #27272a !important;
-    font-size: 0.98rem !important; /* Povećano s 0.9rem za bolju čitljivost */
+    font-size: 0.98rem !important;
     line-height: 1.4 !important;
     text-shadow: none !important;
 }
@@ -472,22 +471,22 @@ table.nastavni_plan tr:last-child th {
     border-bottom: none !important;
 }
 
-/* Naslov godine (Druga godina, Treća godina...) */
+/* naslov godine */
 table.nastavni_plan tr:first-child th[colspan],
 .item-page table th[colspan="6"] {
     background-color: #0f172a !important;
     color: #38bdf8 !important;
-    font-size: 1.15rem !important; /* Istaknuti naslov sekcije */
+    font-size: 1.15rem !important;
     font-weight: 700 !important;
     text-align: center !important;
     padding: 14px !important;
     letter-spacing: 0.5px !important;
 }
 
-/* Zaglavlja kolona (Ред. бр, Назив предмета, Семестар...) */
+/* zaglavlja kolona nalik na rasproed */
 table.nastavni_plan th:not([colspan]) {
     background-color: #1f1f23 !important;
-    color: #e4e4e7 !important; /* Jasnija nijansa umjesto tamnosive */
+    color: #e4e4e7 !important;
     font-weight: 600 !important;
     text-transform: uppercase !important;
     font-size: 0.85rem !important;
@@ -495,7 +494,7 @@ table.nastavni_plan th:not([colspan]) {
     text-align: center !important;
 }
 
-/* Poravnanje kolona */
+/* poravnanje kolona */
 table.nastavni_plan th:nth-child(2),
 table.nastavni_plan td.naziv_predmeta {
     text-align: left !important;
@@ -506,7 +505,7 @@ table.nastavni_plan td {
     color: #e4e4e7 !important;
 }
 
-/* Naizmjenično bojenje redova (Zebra pattern) */
+/* naizmjenicno bojenje redova */
 table.nastavni_plan tbody tr:nth-child(odd) td {
     background-color: #18181b !important;
 }
@@ -519,7 +518,7 @@ table.nastavni_plan tbody tr:hover td {
     background-color: #242429 !important;
 }
 
-/* Nazivi predmeta sa snažnijim kontrastom */
+/* bolji kontrast za nazive predmeta */
 table.nastavni_plan td.naziv_predmeta a,
 .item-page table a {
     color: #f3f4f6 !important;
@@ -534,7 +533,7 @@ table.nastavni_plan td.naziv_predmeta a:hover,
     text-decoration: underline !important;
 }
 
-/* Redovi sa sumom semestra (Укупно трећи семестар...) */
+/* donji redovi (sume za semestar) */
 table.nastavni_plan tr:has(th[colspan="2"]) th,
 table.nastavni_plan tr:has(th[colspan="2"]) td,
 table.nastavni_plan th[colspan="2"] {
@@ -545,9 +544,9 @@ table.nastavni_plan th[colspan="2"] {
 }
 
 /* ==========================================================================
-   11. BOČNI NAVIGACIONI MENIJI (.moduletable_sidemenu) - CENTRIRANI POD-ELEMENTI
+   11. BOCNI NAVIGACIONI MENIJI NA PODSTRANICAMA
    ========================================================================== */
-/* Spoljni kontejner kartice */
+/* spoljni kontejner kartice */
 .moduletable_sidemenu {
     background-color: #18181b !important;
     border: 1px solid #27272a !important;
@@ -557,7 +556,7 @@ table.nastavni_plan th[colspan="2"] {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Naslov menija (npr. "I циклус") */
+/* naslov menija */
 .moduletable_sidemenu h3 {
     background-color: #0f172a !important;
     color: #38bdf8 !important;
@@ -569,7 +568,7 @@ table.nastavni_plan th[colspan="2"] {
     text-align: center !important;
 }
 
-/* Lista i stavke */
+/* lista i stavke */
 .moduletable_sidemenu ul,
 .moduletable_sidemenu ul.nav.menu {
     list-style: none !important;
@@ -584,7 +583,7 @@ table.nastavni_plan th[colspan="2"] {
     background: transparent !important;
 }
 
-/* Linkovi prvog nivoa */
+/* linkovi prvog nivoa */
 .moduletable_sidemenu > ul > li > a {
     color: #f3f4f6 !important;
     font-weight: 600 !important;
@@ -606,7 +605,7 @@ table.nastavni_plan th[colspan="2"] {
     background-color: #242429 !important;
 }
 
-/* Ugniježđene podliste (Centrirani podelementi sa suptilnim hoverom) */
+/* linkovi drugog nivoa */
 .moduletable_sidemenu ul.nav-child {
     padding: 0 !important;
     background-color: #131316 !important;
@@ -618,7 +617,7 @@ table.nastavni_plan th[colspan="2"] {
     font-weight: 500 !important;
     padding: 8px 12px !important;
     display: block !important;
-    text-align: center !important; /* Centriranje teksta pod-elemenata */
+    text-align: center !important;
     text-decoration: none !important;
     border-bottom: 1px solid #1a1a1e !important;
     transition: all 0.2s ease-in-out !important;
@@ -629,7 +628,7 @@ table.nastavni_plan th[colspan="2"] {
     background-color: #1e2530 !important; /* Suptilna plavičasta nijansa na hover */
 }
 
-/* Najdublji nivo podlista (Smerovi) */
+/* najdublji nivo */
 .moduletable_sidemenu ul.nav-child ul.nav-child {
     background-color: #0e0e11 !important;
 }
@@ -647,9 +646,9 @@ table.nastavni_plan th[colspan="2"] {
 }
 
 /* ==========================================================================
-   12. STRANICA POJEDINAČNOG PREDMETA (table.predmet)
+   12. STRANICA ZA POJEDINACNE PREDMETE
    ========================================================================== */
-/* Spoljni kontejner tabele */
+/* spoljni kontejner tabele */
 table.predmet {
     width: 100% !important;
     border-collapse: separate !important;
@@ -662,7 +661,7 @@ table.predmet {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Osnovne ćelije i razmaci */
+/* celije i razmaci */
 table.predmet td,
 table.predmet th {
     padding: 12px 16px !important;
@@ -675,7 +674,7 @@ table.predmet th {
     text-shadow: none !important;
 }
 
-/* Uklanjanje desnih i donjih ivica na krajevima redova */
+/* uklanjanje desnih i donjih ivica na krajevima redova */
 table.predmet tr *:last-child {
     border-right: none !important;
 }
@@ -685,7 +684,7 @@ table.predmet tr:last-child th {
     border-bottom: none !important;
 }
 
-/* Glavno zaglavlje sa nazivom predmeta */
+/* glavno zaglavlje sa nazivom predmeta */
 table.predmet .bijeli_naslov {
     background-color: #1f1f23 !important;
     color: #9ca3af !important;
@@ -704,7 +703,7 @@ table.predmet th[colspan="4"] {
     text-align: left !important;
 }
 
-/* Mini zaglavlja za info (Šifra, Status, Semestar, Fond, ECTS) */
+/* mini zaglavlja za info */
 table.predmet .centriran_bijeli_naslov td,
 tr.centriran_bijeli_naslov td {
     background-color: #1f1f23 !important;
@@ -716,7 +715,7 @@ tr.centriran_bijeli_naslov td {
     letter-spacing: 0.5px !important;
 }
 
-/* Vrijednosti za šifru, status, ECTS bodove... */
+/* vrijednosti */
 table.predmet .centriran td,
 tr.centriran td {
     text-align: center !important;
@@ -725,7 +724,7 @@ tr.centriran td {
     background-color: #131316 !important;
 }
 
-/* Naslovi sekcija ("Циљеви...", "Исходи...", "Садржај...", "Литература...") */
+/* naslovi sekcija */
 table.predmet .plavi_naslov {
     background-color: #1e293b !important;
     color: #38bdf8 !important;
@@ -735,16 +734,16 @@ table.predmet .plavi_naslov {
     border-left: 4px solid #38bdf8 !important;
 }
 
-/* Isticanje bodova (Kolokvijumi, ispit, lab) */
+/* bodovi */
 table.predmet td.bodovi {
-    color: #fb923c !important; /* Narandžasti akcenat za bodove */
+    color: #fb923c !important;
     font-weight: 700 !important;
     text-align: center !important;
     font-size: 1.05rem !important;
     background-color: #1f1a14 !important;
 }
 
-/* Stilizovanje numerisanih lista unutar ćelija (Literatura) */
+/*  stilizovanje ostatka? (Literatura) */
 table.predmet ol,
 table.predmet ul {
     margin: 0 !important;
@@ -761,34 +760,34 @@ table.predmet li:last-child {
     margin-bottom: 0 !important;
 }
 
-/* Istaknuti tekstovi unutar ćelija (npr. IME I PREZIME NASTAVNIKA) */
+/* istaknuti tekstovi unutar celija */
 table.predmet td strong {
     color: #f3f4f6 !important;
 }
 
 /* ==========================================================================
-   STABILAN HOVER ZA TABELE PREDMETA (BEZ TREPERENJA I DVOSTRUKOG FEJDOVANJA)
+   STABILAN HOVER ZA TABELE PREDMETA
    ========================================================================== */
 
-/* 1. Jedinstvena tranzicija samo za pozadinu, poništavanje naslijeđenih animacija */
+/* tranzicija*/
 table.predmet td,
 table.predmet th {
     transition: background-color 0.15s ease !important;
     animation: none !important;
 }
 
-/* 2. Potpuno gašenje pojedinačnog td:hover kako ne bi ulazio u konflikt sa tr:hover */
+/* uklanjanje konflikta sa tr:hover */
 table.predmet td:hover {
     background-color: transparent;
 }
 
-/* 3. Stabilan i ujednačen hover na nivou cijelog reda */
+/* stabilan hover */
 table.predmet tr:hover > td {
-    background-color: #242429 !important; /* Jedinstvena, ugodna tamno-siva pozadina */
+    background-color: #242429 !important;
     color: #f3f4f6 !important;
 }
 
-/* 4. Očuvanje specijalnih ćelija u redu pri prelasku mišem */
+/* ocuvanje celija prelaskom misem */
 table.predmet tr:hover > td.plavi_naslov {
     background-color: #26334d !important;
     color: #38bdf8 !important;
@@ -800,9 +799,9 @@ table.predmet tr:hover > td.bodovi {
 }
 
 /* ==========================================================================
-   13. FOOTER / DNO STRANICE (.row.dark)
+   13. DNO STRANICE
    ========================================================================== */
-/* Spoljni glavni kontejner podnožja */
+/* glavni spoljni kontejner */
 .row.dark,
 footer,
 #footer {
@@ -815,7 +814,7 @@ footer,
     box-shadow: none !important;
 }
 
-/* Poništavanje Bootstrap 2 pogrešnih širina i negativnih margina */
+/* ponistavanje pogresnih sirina i negativnih margina */
 .row.dark .row,
 .row.dark .span12 {
     margin: 0 auto !important;
@@ -827,7 +826,7 @@ footer,
     width: 100% !important;
 }
 
-/* Kontejner teksta i logotipa */
+/* kontejner teksta i logoa */
 .custom_menu1 {
     text-align: center !important;
     background: transparent !important;
@@ -836,7 +835,7 @@ footer,
     padding: 0 !important;
 }
 
-/* Pregaženje ugrađenog inline Verdana fonta i boje */
+/* font i stil teksta */
 .custom_menu1 p,
 .custom_menu1 span {
     color: #9ca3af !important;
@@ -846,7 +845,7 @@ footer,
     text-shadow: none !important;
 }
 
-/* Uređenje HR logotipa da izgleda kao uklopljen badge */
+/* HR logo */
 .custom_menu1 img {
     margin-top: 12px !important;
     border-radius: 4px !important;
