@@ -1,14 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "ETFBL E-Learning Dark Mode",
-  "version": "1.0",
-  "description": "Tamna tema za ETFBL Moodle.",
+  "name": "ETF Dark Mode",
+  "version": "1.1",
+  "description": "Tamna tema za Moodle i Raspored ETF-a",
   "content_scripts": [
     {
       "matches": [
         "https://el.etfbl.net/*"
       ],
       "css": ["dark.css"]
+    },
+    {
+      "matches": [
+        "https://efee.etf.unibl.org/raspored/*"
+      ],
+      "css": ["raspored.css"]
     }
   ]
 }

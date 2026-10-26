@@ -1,0 +1,135 @@
+/* ==========================================================================
+   1. OSNOVNE POZADINE, HEADER I FOOTER
+   ========================================================================== */
+html, body, .ui-mobile-viewport, .ui-page, [data-role="page"], .ui-page-theme-a {
+    background-color: #121212 !important;
+    background: #121212 !important;
+    color: #e0e0e0 !important;
+    text-shadow: none !important;
+}
+
+/* Obavezno bojenje čitavog kontejnera zaglavlja i podnožja */
+.ui-header,
+.ui-footer,
+[data-role="header"],
+[data-role="footer"],
+.ui-bar-inherit,
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+.ui-page-theme-a .ui-header,
+.ui-page-theme-a .ui-footer {
+    background: #1a1a1a !important;
+    background-color: #1a1a1a !important;
+    background-image: none !important;
+    border-color: #2e2e2e !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* uklanjanje posebne pozadine sa samog teksta naslova zbog pozadine kontejnera */
+.ui-title,
+h1.ui-title,
+.ui-header .ui-title,
+.ui-footer .ui-title,
+[data-role="header"] *,
+[data-role="footer"] * {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+}
+
+/* ==========================================================================
+   2. DROPDOWNOVI I SVIJETLI OKVIRI (FIX?)
+   ========================================================================== */
+/* uklanjanje svijetlih traka oko dropdownova */
+.container-fluid,
+.row,
+.nilip,
+.spg,
+.ui-select {
+    background-color: #121212 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* dugmad i dropdowni */
+.ui-select .ui-btn,
+.ui-btn,
+#prostorija-button,
+#nastavnik-button,
+#epg-button,
+#ep-button,
+select {
+    background-color: #242424 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #3b3b3b !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+}
+
+.ui-select .ui-btn:hover,
+.ui-select .ui-btn:focus,
+.ui-btn:hover {
+    background-color: #2e2e2e !important;
+    border-color: #38bdf8 !important;
+    color: #ffffff !important;
+}
+
+/* Opcije u padajućem meniju pri kliku */
+select option {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* ==========================================================================
+   3. TABELA
+   ========================================================================== */
+#raspored,
+.table-bordered {
+    background-color: #121212 !important;
+    border: 1px solid #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* zaglavlje tabele (pon-ned) */
+#raspored thead td,
+#raspored thead th {
+    background-color: #1a1a1a !important;
+    color: #38bdf8 !important;
+    font-weight: bold !important;
+    border: 1px solid #2a2a2a !important;
+    text-align: center !important;
+}
+
+/* naizmjennicni redovi u tabeli */
+#raspored tbody tr:nth-child(even) td {
+    background-color: #171717 !important;
+}
+
+#raspored tbody tr:nth-child(odd) td {
+    background-color: #202020 !important;
+}
+
+/* kolona sa vremenom */
+#raspored tbody td:first-child {
+    background-color: #181818 !important;
+    color: #fb923c !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+}
+
+/* celije i tabele i hoverovanje */
+#raspored td {
+    border: 1px solid #2a2a2a !important;
+    color: #d1d5db !important;
+    font-size: 0.88rem !important;
+}
+
+#raspored tbody td:hover {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
