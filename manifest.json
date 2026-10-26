@@ -1,26 +1,41 @@
 {
   "manifest_version": 3,
-  "name": "ETF Dark Mode",
-  "version": "1.2",
-  "description": "Tamna tema za Moodle, raspored i glavni sajt ETFBL-a",
+  "name": "ETFBL Dark Mode",
+  "version": "1.4",
+  "description": "Tamna tema za ETFBL platforme",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "etfbl_logo_16.png",
+    "48": "etfbl_logo_48.png",
+    "128": "etfbl_logo_128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "etfbl_logo_16.png",
+      "48": "etfbl_logo_48.png",
+      "128": "etfbl_logo_128.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
-        "https://el.etfbl.net/*"
+        "*://el.etfbl.net/*",
+        "*://efee.etf.unibl.org/*",
+        "*://etf.unibl.org/*"
       ],
-      "css": ["dark.css"]
-    },
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
     {
+      "resources": ["dark.css", "raspored.css", "etf.css"],
       "matches": [
-        "https://efee.etf.unibl.org/raspored/*"
-      ],
-      "css": ["raspored.css"]
-    },
-    {
-      "matches": [
-        "https://etf.unibl.org/*"
-      ],
-      "css": ["etf.css"]
+        "*://el.etfbl.net/*",
+        "*://efee.etf.unibl.org/*",
+        "*://etf.unibl.org/*"
+      ]
     }
   ]
 }

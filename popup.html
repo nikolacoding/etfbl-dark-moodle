@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      width: 280px;
+      background-color: #121212;
+      color: #f3f4f6;
+      padding: 16px;
+    }
+    .header {
+      border-bottom: 1px solid #27272a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .header h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+    .section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #9ca3af;
+      margin-bottom: 10px;
+    }
+    .toggle-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .toggle-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .toggle-item label {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #e4e4e7;
+      cursor: pointer;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #3f3f46;
+      transition: .2s ease;
+      border-radius: 22px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #ffffff;
+      transition: .2s ease;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #38bdf8;
+    }
+    input:checked + .slider:before {
+      transform: translateX(18px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>ETFBL Dark Mode</h2>
+  </div>
+
+  <div class="section-title">Сајтови</div>
+
+  <div class="toggle-group">
+    <div class="toggle-item">
+      <label for="etfToggle">Главни сајт</label>
+      <label class="switch">
+        <input type="checkbox" id="etfToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="toggle-item">
+      <label for="rasporedToggle">Распоред часова</label>
+      <label class="switch">
+        <input type="checkbox" id="rasporedToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="toggle-item">
+      <label for="elToggle">E-Learning (Moodle)</label>
+      <label class="switch">
+        <input type="checkbox" id="elToggle" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
