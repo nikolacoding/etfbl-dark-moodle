@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ETFBL Dark Mode",
-  "version": "1.41",
-  "description": "Tamna tema za ETFBL platforme",
+  "version": "1.5",
+  "description": "Tamna tema za ETFBL i e-Student platforme",
   "permissions": ["storage"],
   "icons": {
     "16": "etfbl_logo_16.png",
@@ -22,7 +22,8 @@
       "matches": [
         "*://el.etfbl.net/*",
         "*://efee.etf.unibl.org/raspored*",
-        "*://etf.unibl.org/*"
+        "*://etf.unibl.org/*",
+        "*://student.unibl.org/*"
       ],
       "js": ["content.js"],
       "run_at": "document_start"
@@ -34,12 +35,14 @@
         "dark.css",
         "raspored.css",
         "etf.css",
+        "estudent.css",
         "banner-dark.png"
       ],
       "matches": [
         "*://el.etfbl.net/*",
         "*://efee.etf.unibl.org/*",
-        "*://etf.unibl.org/*"
+        "*://etf.unibl.org/*",
+        "*://student.unibl.org/*"
       ]
     }
   ]

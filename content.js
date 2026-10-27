@@ -12,13 +12,16 @@
   } else if (hostname.includes('etf.unibl.org')) {
     cssFile = 'etf.css';
     siteKey = 'etfEnabled';
+  } else if (hostname.includes('student.unibl.org')) {
+    cssFile = 'estudent.css';
+    siteKey = 'studentEnabled';
   }
 
   if (!cssFile) return;
 
   function updateTheme() {
     chrome.storage.local.get(
-      { etfEnabled: true, rasporedEnabled: true, elEnabled: true },
+      { etfEnabled: true, rasporedEnabled: true, elEnabled: true, studentEnabled: true },
       (items) => {
         const isEnabled = items[siteKey] !== false;
         const existingLink = document.getElementById('etfbl-dark-theme-style');

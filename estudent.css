@@ -1,0 +1,246 @@
+/* ==========================================================================
+   E-STUDENT (student.unibl.org) - KOMPLETNO PRILAGOĐENA TAMNA TEMA
+   ========================================================================== */
+
+/* 1. OSNOVNE POZADINE I TEKST STRANICE */
+html, body, #wrapper, #wrapperInside, #content, .inner3, #bodyPanel {
+    background-color: #121212 !important;
+    background: #121212 !important;
+    color: #e4e4e7 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Svi tekstovi i labele unutar glavnog kontejnera */
+#bodyPanel, #bodyPanel *, .inner3, .inner3 td, .inner3 span, .inner3 div {
+    color: #e4e4e7 !important;
+}
+
+/* Popravka vidljivosti za "Стање на рачуну" */
+#bodyPanel {
+    font-size: 0.95rem !important;
+}
+
+/* Uklanjanje starih pozadinskih slika/okvira sajta */
+#content .top, #content .bottom, 
+#content .top div, #content .bottom div,
+.sidebar_box .top, .sidebar_box .bottom {
+    background: none !important;
+    border: none !important;
+    display: none !important;
+}
+
+/* 2. HEADER I LOGO */
+#header {
+    background-color: #18181b !important;
+    border-bottom: 1px solid #27272a !important;
+}
+
+/* Prilagođavanje logotipa tamnoj pozadini */
+#logo, #header #logo, .sidebar_box img {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    mix-blend-mode: multiply !important; /* Uklanja bijelu pozadinu logoa */
+}
+
+/* Bočni panel sa menijem */
+#sidebarL, .sidebar_box, .sidebar_box .inside {
+    background-color: #141416 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Korisnički podaci (gore desno) */
+#logged_in {
+    color: #9ca3af !important;
+}
+#logged_in strong.m a {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+#logged_in strong.indeks {
+    color: #fb923c !important;
+}
+#logout {
+    color: #ef4444 !important;
+    font-weight: 600 !important;
+    margin-left: 8px !important;
+}
+
+/* 3. MENI (NAVIGACIJA) */
+ul[id*="menu:nav"] {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 10px 0 !important;
+}
+
+ul[id*="menu:nav"] li {
+    margin-bottom: 4px !important;
+}
+
+ul[id*="menu:nav"] li a {
+    display: block !important;
+    padding: 8px 12px !important;
+    background-color: #1c1c21 !important;
+    color: #d1d5db !important;
+    border: 1px solid #27272a !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    font-size: 0.88rem !important;
+    font-weight: 500 !important;
+    transition: all 0.15s ease-in-out !important;
+    text-shadow: none !important;
+}
+
+ul[id*="menu:nav"] li a:hover {
+    background-color: #27272a !important;
+    color: #38bdf8 !important;
+    border-color: #38bdf8 !important;
+}
+
+ul[id*="menu:nav"] li.opened > a,
+ul[id*="menu:nav"] li a.opened {
+    background-color: #1e2530 !important;
+    color: #38bdf8 !important;
+    border-color: #38bdf8 !important;
+    font-weight: 600 !important;
+}
+
+/* 4. NASLOVI I PLAVI AKCENTI ("Испити које могу да пријавим") */
+h1, h2, h3, .subHeader {
+    color: #38bdf8 !important;
+    text-shadow: none !important;
+}
+
+h1 {
+    font-size: 1.3rem !important;
+    border-bottom: 2px solid #27272a !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 16px !important;
+}
+
+/* Plavi podnaslovi/linkovi na stranici */
+#bodyPanel a, #bodyPanel a:link, #bodyPanel a:visited {
+    color: #38bdf8 !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+}
+
+#bodyPanel a:hover {
+    color: #fb923c !important;
+}
+
+/* 5. TABELA (STILIZACIJA I DUGMAD "ПРИЈАВИ") */
+.rich-table {
+    background-color: #141416 !important;
+    border: 1px solid #27272a !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 14px 0 !important;
+}
+
+/* Zaglavlje tabele */
+.rich-table-subheadercell {
+    background-color: #18181b !important;
+    color: #38bdf8 !important;
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    border: 1px solid #27272a !important;
+    padding: 10px 10px !important;
+    text-align: left !important;
+}
+
+.rich-table-subheadercell a, 
+.rich-table-subheadercell a.sortColumn {
+    color: #38bdf8 !important;
+    text-decoration: none !important;
+}
+
+/* Ćelije i veličina teksta u tabeli */
+.rich-table-cell {
+    border: 1px solid #27272a !important;
+    color: #e4e4e7 !important;
+    padding: 8px 10px !important;
+    font-size: 0.88rem !important;
+    vertical-align: middle !important;
+}
+
+/* Naizmjenični tamni redovi */
+.rich-table-row.oddTableRow, tr.oddTableRow, tr.odd {
+    background-color: #141416 !important;
+}
+
+.rich-table-row.evenTableRow, tr.evenTableRow, tr.even {
+    background-color: #1c1c21 !important;
+}
+
+/* Hover prelaza preko reda */
+.rich-table-row:hover, tr.oddTableRow:hover, tr.evenTableRow:hover, tr:hover td {
+    background-color: #222936 !important;
+    color: #ffffff !important;
+}
+
+/* FIX ZA DUGMAD "ПРИЈАВИ" UNUTAR TABELE */
+.rich-table input[type="submit"],
+.rich-table input[type="button"],
+input[value*="Пријави"],
+input[value*="пријави"],
+input[type="submit"], 
+input[type="button"] {
+    background-color: #242428 !important;
+    background-image: none !important;
+    color: #38bdf8 !important;
+    border: 1px solid #38bdf8 !important;
+    border-radius: 6px !important;
+    padding: 5px 14px !important;
+    font-size: 0.84rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.rich-table input[type="submit"]:hover,
+.rich-table input[type="button"]:hover,
+input[value*="Пријави"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #38bdf8 !important;
+    color: #121212 !important;
+    border-color: #38bdf8 !important;
+}
+
+/* 6. INFO OBAVJEŠTENJA ("Нисте пријавили ниједан испит.") */
+dl.rich-messages,
+.rich-message,
+div[id*="msg"],
+table[class*="message"],
+.rich-mpnl-body,
+div.infoBox,
+div[style*="background"],
+td.inner3 > div,
+.inner3 table[width="100%"] {
+    background-color: #18181b !important;
+    background: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-left: 4px solid #38bdf8 !important;
+    color: #e4e4e7 !important;
+    border-radius: 6px !important;
+    padding: 12px 16px !important;
+    margin: 14px 0 !important;
+    box-shadow: none !important;
+}
+
+/* Tekst unutar info obavještenja */
+dl.rich-messages dt,
+dl.rich-messages dd,
+.rich-message span,
+div[id*="msg"] *,
+.infoBox * {
+    color: #e4e4e7 !important;
+    font-size: 0.92rem !important;
+    font-weight: 500 !important;
+}
