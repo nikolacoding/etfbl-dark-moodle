@@ -1,4 +1,18 @@
 /* ==========================================================================
+    LANDING PAGE SLIKA
+   ========================================================================== */
+#header {
+    background-color: #121212 !important;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/banner-dark.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important; /* Čuva originalne proporcije banera */
+    height: 130px !important;            /* Prilagođena visina zaglavlja */
+    max-width: 100% !important;
+}
+
+
+/* ==========================================================================
    1. POZADINA SAJTA I GLAVNI KONTEJNERI
    ========================================================================== */
 html, body, .container, .row, .span12, .span6, .span3 {
@@ -858,4 +872,126 @@ footer,
 .custom_menu1 img:hover {
     opacity: 1 !important;
     transform: scale(1.03) !important;
+}
+
+/* ==========================================================================
+   STILIZOVANJE TABELE DOKUMENATA I PRILOGA
+   ========================================================================== */
+
+/* naslov */
+caption {
+    color: #38bdf8 !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+    padding-bottom: 8px !important;
+}
+
+/* zaglavlje */
+th.at_filename,
+th.at_file_size,
+th.at_created_date {
+    background-color: #18181b !important;
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+    border: 1px solid #27272a !important;
+    padding: 10px 12px !important;
+}
+
+/* naizmjenicni redovi (fix za bijelu necitljivu pozadinu i tekst) */
+tr.odd td.at_filename,
+tr.odd td.at_file_size,
+tr.odd td.at_created_date,
+tr.odd td {
+    background-color: #141416 !important;
+    color: #d1d5db !important;
+    border: 1px solid #27272a !important;
+    padding: 10px 12px !important;
+}
+
+tr.even td.at_filename,
+tr.even td.at_file_size,
+tr.even td.at_created_date,
+tr.even td {
+    background-color: #1c1c21 !important;
+    color: #d1d5db !important;
+    border: 1px solid #27272a !important;
+    padding: 10px 12px !important;
+}
+
+/* nazivi fajlova, linkovi */
+a.at_url {
+    color: #f3f4f6 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease !important;
+}
+
+/* ostali podaci o fajlu */
+td.at_file_size,
+td.at_created_date {
+    color: #9ca3af !important;
+    font-size: 0.88rem !important;
+}
+
+/* poravnanje ikonica uz fajl */
+a.at_icon img {
+    vertical-align: middle !important;
+    margin-right: 8px !important;
+}
+
+/* hover efekat */
+tr.odd:hover td,
+tr.even:hover td {
+    background-color: #26262d !important;
+    transition: background-color 0.15s ease !important;
+}
+
+tr.odd:hover a.at_url,
+tr.even:hover a.at_url {
+    color: #fb923c !important;
+}
+
+/* ==========================================================================
+   POPRAVKA RAZMAKA NA LANDING PAGE
+   ========================================================================== */
+
+/* dodavanje razmaka izmedju slika i naslova "Novosti" */
+.fs-sp1,
+#freeSlide_sp1_id110 {
+    margin-bottom: 24px !important;
+}
+
+/* uklanjanje suvisnog praznog kontejnera za sistemske poruke */
+#system-message-container,
+#system-message-container:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* normalizacija margina naslova i elemenata ispod */
+article.item-page {
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
+}
+
+article.item-page h1 {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+    padding-bottom: 0 !important;
+}
+
+/* sakrivanje praznog kontejnera za priloge ispod naslova */
+article.item-page .attachmentsContainer {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* priblizavanje liste sa elementima novosti naslovu */
+ul.category-module.mod-list,
+ul.category-module {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }

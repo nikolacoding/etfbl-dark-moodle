@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ETFBL Dark Mode",
-  "version": "1.4",
+  "version": "1.41",
   "description": "Tamna tema za ETFBL platforme",
   "permissions": ["storage"],
   "icons": {
@@ -21,7 +21,7 @@
     {
       "matches": [
         "*://el.etfbl.net/*",
-        "*://efee.etf.unibl.org/*",
+        "*://efee.etf.unibl.org/raspored*",
         "*://etf.unibl.org/*"
       ],
       "js": ["content.js"],
@@ -30,7 +30,12 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["dark.css", "raspored.css", "etf.css"],
+      "resources": [
+        "dark.css",
+        "raspored.css",
+        "etf.css",
+        "banner-dark.png"
+      ],
       "matches": [
         "*://el.etfbl.net/*",
         "*://efee.etf.unibl.org/*",
