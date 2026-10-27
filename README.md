@@ -13,9 +13,11 @@ U gornjem desnom (ili lijevom) uglu stranice uključi **Developer mode**.
 Klikni na **Load unpacked** i izaberi otpakovani folder.
 
 ### Konačan izgled:
+<img width="316" height="377" alt="image" src="https://github.com/user-attachments/assets/ab4fa706-dab7-4bfb-832e-ed1bf9fd5af2" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/527410f0-7105-4ff4-9ee9-590c079c5ce0" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d33d9110-3bfc-4773-8056-1d1e8cdb1f07" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/aa611db4-ad7b-43ca-9b7e-7aed3a6d309e" />
+
 
 
 <br>
