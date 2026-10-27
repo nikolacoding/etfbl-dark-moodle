@@ -982,8 +982,8 @@ article.item-page h1 {
     padding-bottom: 0 !important;
 }
 
-/* sakrivanje praznog kontejnera za priloge ispod naslova */
-article.item-page .attachmentsContainer {
+/* uslovno sakrivanje (ako ne sadrzi priloge ovog tipa) */
+article.item-page .attachmentsContainer:not(:has(table)) {
     display: none !important;
     margin: 0 !important;
     padding: 0 !important;

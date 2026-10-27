@@ -226,3 +226,325 @@ pre a,
 code a {
     color: #38bdf8 !important;
 }
+
+/* glavni naslovi stranica, sekcija i landing page-a ("ETFBL E-Learning") */
+.sitename,
+.frontpage-heading,
+#page-header h1,
+.page-header-headings h1,
+.page-context-header h1,
+.page-header h1,
+.sectionname,
+.section-title,
+.course-content .section .sectionname,
+h2.title,
+#region-main h2,
+article h1,
+article h2 {
+    color: #ffffff !important;
+    border-left: 4px solid #38bdf8 !important;
+    padding-left: 12px !important;
+    margin-top: 18px !important;
+    margin-bottom: 16px !important;
+    font-weight: 700 !important;
+    font-size: 1.35rem !important;
+    line-height: 1.25 !important;
+    background: transparent !important;
+}
+
+/* naslovi sporednih blokova i kartica sa lijeve/desne strrane */
+.block .header h2,
+.block-cards .header-button-group h2,
+.card-title {
+    color: #ffffff !important;
+    border-left: 3px solid #38bdf8 !important;
+    padding-left: 10px !important;
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+}
+
+/* podnaslovi i nazivi kategorija/kurseva */
+.coursecat .categoryname,
+.coursebox .coursename a {
+    color: #f3f4f6 !important;
+    font-weight: 600 !important;
+    transition: color 0.15s ease-in-out !important;
+}
+
+/* hover efekat sa akcentom na linkove kurseva */
+.coursebox .coursename a:hover,
+.coursecat .categoryname:hover {
+    color: #fb923c !important;
+    text-decoration: none !important;
+}
+
+/* kartice kurseva */
+.card,
+.dashboard-card,
+.coursebox {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: border-color 0.2s ease, background-color 0.2s ease !important;
+}
+
+/* hover stanje, preslikano sa glavnog sajta */
+.card:hover,
+.dashboard-card:hover,
+.coursebox:hover {
+    background-color: #1f1f23 !important;
+    border-color: #38bdf8 !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* promjena boje naslova kursa pri prelasku misem */
+.card:hover .coursename a,
+.card:hover .card-title,
+.card:hover .multiline,
+.card:hover h3,
+.coursebox:hover .coursename a {
+    color: #38bdf8 !important;
+    transition: color 0.2s ease !important;
+}
+
+/* ==========================================================================
+    PROZOR ZA OBAVJESTENJA I PORUKE
+   ========================================================================== */
+
+/* glavni kontejner prozora */
+.popover-region-container {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+    overflow: hidden !important;
+}
+
+/* zaglavlje prozora */
+.popover-region-header-container {
+    background-color: #18181b !important;
+    border-bottom: 1px solid #27272a !important;
+    padding: 12px 16px !important;
+}
+
+.popover-region-header-text {
+    color: #38bdf8 !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+}
+
+/* ikone u zaglavlju */
+.popover-region-header-actions a,
+.popover-region-header-actions i,
+.popover-region-header-actions .icon {
+    color: #9ca3af !important;
+    transition: color 0.15s ease !important;
+}
+
+.popover-region-header-actions a:hover i,
+.popover-region-header-actions a:hover {
+    color: #38bdf8 !important;
+}
+
+/* sadrzaj prozora i poruka kad nema obavjestenja */
+.popover-region-content-container,
+.popover-region-content {
+    background-color: #18181b !important;
+}
+
+.empty-message {
+    color: #9ca3af !important;
+    font-size: 0.9rem !important;
+    padding: 24px 0 !important;
+    text-align: center !important;
+}
+
+/* stilizovanje pojedinacnih obavjestenja na listi */
+.popover-region-container .content-item-container {
+    background-color: #18181b !important;
+    border-bottom: 1px solid #27272a !important;
+    color: #e4e4e7 !important;
+    transition: background-color 0.15s ease !important;
+}
+
+.popover-region-container .content-item-container:hover {
+    background-color: #1f1f23 !important;
+}
+
+.popover-region-container .content-item-container.unread {
+    background-color: #1a2332 !important;
+    border-left: 3px solid #38bdf8 !important;
+}
+
+.popover-region-container .content-item-container .timestamp {
+    color: #fb923c !important;
+    font-size: 0.8rem !important;
+}
+
+/* footer prozora */
+.popover-region-footer-container {
+    background-color: #141416 !important;
+    border-top: 1px solid #27272a !important;
+    padding: 10px !important;
+    text-align: center !important;
+    transition: background-color 0.15s ease !important;
+}
+
+.popover-region-seeall-text {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    transition: color 0.15s ease !important;
+}
+
+.see-all-link:hover .popover-region-seeall-text {
+    color: #fb923c !important;
+}
+
+.see-all-link:hover .popover-region-footer-container {
+    background-color: #1f1f23 !important;
+}
+
+/* ==========================================================================
+   BOCNI MENI ZA PORUKE
+   ========================================================================== */
+
+/* glavni kontejner i unutrasnji potkontejneri */
+.message-app,
+[data-region="message-drawer"],
+.message-app .header-container,
+.message-app .body-container,
+.message-app .footer-container,
+.message-app .view-overview-body,
+.message-app [data-region="view-overview"],
+.message-app [data-region="view-contacts"],
+.message-app [data-region="view-search"],
+.message-app [data-region="view-settings"],
+.message-app [data-region="view-conversation"] {
+    background-color: #18181b !important;
+    color: #e4e4e7 !important;
+    border-color: #27272a !important;
+}
+
+/* gazenje ugradjenih bootstrap boja */
+.message-app .bg-white,
+.message-app .bg-light,
+.message-app .bg-secondary,
+.message-app .bg-pulse-grey {
+    background-color: #141416 !important;
+    color: #e4e4e7 !important;
+}
+
+/* X dugme*/
+.message-app .closewidget a,
+.message-app .header-container a,
+.message-app .header-container i {
+    color: #9ca3af !important;
+    transition: color 0.15s ease !important;
+}
+
+.message-app .closewidget a:hover,
+.message-app .header-container a:hover,
+.message-app .header-container a:hover i {
+    color: #38bdf8 !important;
+}
+
+/* pretraga */
+.message-app .simplesearchform .form-control,
+.message-app input[type="text"] {
+    background-color: #121212 !important;
+    color: #e4e4e7 !important;
+    border: 1px solid #27272a !important;
+    border-radius: 6px 0 0 6px !important;
+}
+
+.message-app .simplesearchform .btn-submit,
+.message-app .input-group-append .btn {
+    background-color: #27272a !important;
+    border: 1px solid #27272a !important;
+    color: #38bdf8 !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+/* sekcije i dm kartice */
+.message-app .card,
+.message-app .card-header {
+    background-color: #141416 !important;
+    border-color: #27272a !important;
+    border-radius: 6px !important;
+    margin-bottom: 4px !important;
+}
+
+.message-app .overview-section-toggle {
+    color: #e4e4e7 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.message-app .overview-section-toggle:hover {
+    color: #38bdf8 !important;
+}
+
+/* kontakti */
+.message-app .list-group-item,
+.message-app a.list-group-item {
+    background-color: #18181b !important;
+    border-color: #27272a !important;
+    color: #e4e4e7 !important;
+    transition: background-color 0.15s ease !important;
+}
+
+.message-app a.list-group-item:hover,
+.message-app .list-group-item-action:hover {
+    background-color: #1f1f23 !important;
+}
+
+.message-app .list-group-item strong {
+    color: #ffffff !important;
+}
+
+.message-app .last-message,
+.message-app .text-muted {
+    color: #9ca3af !important;
+}
+
+/* unos i dugme za slanje */
+.message-app textarea[data-region="send-message-txt"] {
+    background-color: #121212 !important;
+    color: #e4e4e7 !important;
+    border: 1px solid #27272a !important;
+    border-radius: 6px !important;
+}
+
+.message-app [data-action="send-message"] i {
+    color: #38bdf8 !important;
+}
+
+.message-app [data-action="send-message"]:hover i {
+    color: #fb923c !important;
+}
+
+/* footer sa linkom */
+.message-app .footer-container,
+.message-app [data-region="footer-container"] {
+    background-color: #141416 !important;
+    border-top: 1px solid #27272a !important;
+    padding: 10px !important;
+}
+
+.message-app [data-region="footer-container"] a {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease !important;
+}
+
+.message-app [data-region="footer-container"] a:hover {
+    color: #fb923c !important;
+}

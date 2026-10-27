@@ -41,10 +41,8 @@
     );
   }
 
-  // Učitavanje teme odmah
   updateTheme();
 
-  // Reagovanje na prekidače u realnom vremenu
   chrome.storage.onChanged.addListener(() => {
     updateTheme();
   });

@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const rasporedToggle = document.getElementById('rasporedToggle');
   const elToggle = document.getElementById('elToggle');
 
-  // Učitavanje stanja (podrazumijevano true)
   chrome.storage.local.get(
     { etfEnabled: true, rasporedEnabled: true, elEnabled: true },
     (items) => {
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   );
 
-  // Čuvanje izmjena
   const saveState = () => {
     chrome.storage.local.set({
       etfEnabled: etfToggle.checked,
