@@ -548,3 +548,330 @@ article h2 {
 .message-app [data-region="footer-container"] a:hover {
     color: #fb923c !important;
 }
+
+/* ==========================================================================
+   LOGIN STRANICA
+   ========================================================================== */
+
+/* uklanjanje ruznog elementa za registraciju */
+body.pagelayout-login #region-main .row:has(#signup),
+body.pagelayout-login .card:has(#signup),
+body.pagelayout-login #page-footer {
+    display: none !important;
+}
+
+/* 2. eliminisanje skrolbara i centriranje */
+html,
+body.pagelayout-login {
+    overflow-x: hidden !important;
+    background-color: #121212 !important;
+}
+
+body.pagelayout-login #page-wrapper {
+    min-height: 100vh !important;
+    background-color: #121212 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 40px 20px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+}
+
+/* glancanje kontejnera */
+body.pagelayout-login #page,
+body.pagelayout-login #page-content,
+body.pagelayout-login #region-main-box,
+body.pagelayout-login #region-main {
+    width: 100% !important;
+    max-width: 780px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* kontejner fix 2 */
+body.pagelayout-login .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    overflow: visible !important;
+}
+
+/* kontejner fix 3 */
+body.pagelayout-login .col-xl-6,
+body.pagelayout-login .col-sm-8,
+body.pagelayout-login .col-12 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* cist okvir za glavni dio */
+body.pagelayout-login .card {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    width: 100% !important;
+}
+
+/* naslov */
+body.pagelayout-login h1.card-header {
+    background-color: #18181b !important;
+    color: #38bdf8 !important;
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    border-bottom: 2px solid #27272a !important;
+    padding: 18px 24px !important;
+    text-align: center !important;
+}
+
+/* odstupanje forme */
+body.pagelayout-login .card-body {
+    padding: 28px 32px !important;
+}
+
+body.pagelayout-login .card-body .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+}
+
+body.pagelayout-login .card-body .col-md-5 {
+    flex: 1 1 280px !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* tekst i natpisi */
+body.pagelayout-login .card-body,
+body.pagelayout-login .card-body * {
+    color: #e4e4e7 !important;
+}
+
+/* polja za unos */
+body.pagelayout-login input[type="text"],
+body.pagelayout-login input[type="password"] {
+    background-color: #121212 !important;
+    border: 1px solid #27272a !important;
+    color: #f3f4f6 !important;
+    border-radius: 6px !important;
+    padding: 10px 14px !important;
+    font-size: 0.95rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+body.pagelayout-login input[type="text"]:focus,
+body.pagelayout-login input[type="password"]:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2) !important;
+}
+
+/* prijava dugme */
+body.pagelayout-login #loginbtn {
+    background-color: #38bdf8 !important;
+    border-color: #38bdf8 !important;
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    transition: all 0.15s ease-in-out !important;
+    width: 100% !important;
+}
+
+body.pagelayout-login #loginbtn:hover {
+    background-color: #fb923c !important;
+    border-color: #fb923c !important;
+    color: #0f172a !important;
+}
+
+/* dugme za prijavu kao gost */
+body.pagelayout-login #loginguestbtn {
+    background-color: #27272a !important;
+    border-color: #3f3f46 !important;
+    color: #e4e4e7 !important;
+    border-radius: 6px !important;
+    padding: 8px !important;
+    transition: all 0.15s ease-in-out !important;
+    width: 100% !important;
+}
+
+body.pagelayout-login #loginguestbtn:hover {
+    background-color: #3f3f46 !important;
+    color: #ffffff !important;
+}
+
+/* linkovi */
+body.pagelayout-login a {
+    color: #38bdf8 !important;
+    text-decoration: none !important;
+}
+
+body.pagelayout-login a:hover {
+    color: #fb923c !important;
+    text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   DIJALOG DA JE KORISNIK VEC ULOGOVAN
+   ========================================================================== */
+
+/* fix za uduplavanje kontejnera */
+body.pagelayout-login .generalbox,
+body.pagelayout-login #notice,
+body.pagelayout-login .modal-dialog.modal-in-page {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* jedinstveni kontejner (unutrasnji) */
+body.pagelayout-login #modal-content {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    color: #e4e4e7 !important;
+    max-width: 540px !important;
+    margin: 20px auto !important;
+    overflow: hidden !important;
+}
+
+/* potvrdi */
+body.pagelayout-login #modal-header {
+    background-color: #18181b !important;
+    border-bottom: 1px solid #27272a !important;
+    padding: 16px 20px !important;
+}
+
+body.pagelayout-login #modal-header h4 {
+    color: #38bdf8 !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+/* body i tekst */
+body.pagelayout-login #modal-body,
+body.pagelayout-login #modal-body p {
+    color: #e4e4e7 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+    background-color: transparent !important;
+    padding: 20px !important;
+    margin: 0 !important;
+}
+
+/* dno */
+body.pagelayout-login #modal-footer {
+    background-color: #18181b !important;
+    border-top: 1px solid #27272a !important;
+    padding: 14px 20px !important;
+}
+
+/* (primarno) odjava dugme */
+body.pagelayout-login #modal-footer .btn-primary {
+    background-color: #38bdf8 !important;
+    border-color: #38bdf8 !important;
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+body.pagelayout-login #modal-footer .btn-primary:hover {
+    background-color: #fb923c !important;
+    border-color: #fb923c !important;
+    color: #0f172a !important;
+}
+
+/* sekundarno (otkazi) dugme */
+body.pagelayout-login #modal-footer .btn-secondary {
+    background-color: #27272a !important;
+    border-color: #3f3f46 !important;
+    color: #e4e4e7 !important;
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+body.pagelayout-login #modal-footer .btn-secondary:hover {
+    background-color: #3f3f46 !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   PRETRAGA KURSEVA
+   ========================================================================== */
+
+/* kontejner grupe za pretragu */
+.simplesearchform .input-group {
+    border-radius: 6px !important;
+    box-shadow: none !important;
+}
+
+/* polje za unos */
+.simplesearchform input[type="text"].form-control,
+.simplesearchform input[data-region="input"] {
+    background-color: #121212 !important;
+    color: #e4e4e7 !important;
+    border: 1px solid #27272a !important;
+    border-right: none !important;
+    border-radius: 6px 0 0 6px !important;
+    padding: 9px 14px !important;
+    font-size: 0.95rem !important;
+    box-shadow: none !important;
+}
+
+/* placeholder tekst */
+.simplesearchform input[type="text"].form-control::placeholder {
+    color: #9ca3af !important;
+    opacity: 1 !important;
+}
+
+/* fokus na pretragu */
+.simplesearchform input[type="text"].form-control:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2) !important;
+}
+
+/* dugme za pretragu */
+.simplesearchform .input-group-append .btn.search-icon,
+.simplesearchform .btn-primary {
+    background-color: #38bdf8 !important;
+    border: 1px solid #38bdf8 !important;
+    color: #0f172a !important;
+    border-radius: 0 6px 6px 0 !important;
+    padding: 0 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+/* ikonica lupe */
+.simplesearchform .input-group-append .btn.search-icon i,
+.simplesearchform .btn-primary i {
+    color: #0f172a !important;
+}
+
+/* hover efekat*/
+.simplesearchform .input-group-append .btn.search-icon:hover,
+.simplesearchform .btn-primary:hover {
+    background-color: #fb923c !important;
+    border-color: #fb923c !important;
+}
+
+.simplesearchform .input-group-append .btn.search-icon:hover i,
+.simplesearchform .btn-primary:hover i {
+    color: #0f172a !important;
+}
