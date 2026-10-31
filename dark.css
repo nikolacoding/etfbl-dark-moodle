@@ -42,9 +42,13 @@ nav.fixed-top .icon {
 }
 
 nav.fixed-top a:hover,
-nav.fixed-top .nav-link:hover {
+nav.fixed-top .nav-link:hover,
+nav.fixed-top .usermenu:hover,
+nav.fixed-top .usermenu:hover *,
+nav.fixed-top .dropdown-toggle:hover,
+nav.fixed-top .dropdown-toggle:hover * {
     color: #38bdf8 !important;
-    background-color: rgba(255, 255, 255, 0.04) !important;
+    background-color: transparent !important;
 }
 
 /* fix za odvratno dizajniran bocni meni */
@@ -278,13 +282,22 @@ article h2 {
 }
 
 /* promjena boje naslova kursa pri prelasku misem */
-.card:hover .coursename a,
-.card:hover .card-title,
-.card:hover .multiline,
-.card:hover h3,
+.dashboard-card:hover .coursename a,
+.dashboard-card:hover .card-title,
+.dashboard-card:hover .multiline,
+.dashboard-card:hover h3,
 .coursebox:hover .coursename a {
     color: #38bdf8 !important;
     transition: color 0.2s ease !important;
+}
+
+/* sprijecavanje promjene boje pri hoveru */
+.block:hover .header h2,
+.block:hover .card-title,
+.block:hover h2,
+.block:hover h3,
+.block:hover .h2 {
+    color: #ffffff !important;
 }
 
 /* ==========================================================================
