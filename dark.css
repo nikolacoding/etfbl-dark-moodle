@@ -127,6 +127,17 @@ nav.fixed-top .dropdown-toggle:hover * {
     color: #a3a3a3 !important;
 }
 
+/* naizmjenicne nijanse za parne i neparne kurseve na listi */
+.coursebox.odd,
+.coursebox:nth-child(odd) {
+    background-color: #18181b !important;
+}
+
+.coursebox.even,
+.coursebox:nth-child(even) {
+    background-color: #222226 !important;
+}
+
 /* ==========================================================================
    5. FORME, INPUTI, PADAJUCI MENIJI
    ========================================================================== */
