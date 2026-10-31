@@ -19,11 +19,20 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "*://el.etfbl.net/*",
-        "*://efee.etf.unibl.org/raspored*",
-        "*://etf.unibl.org/*"
-      ],
+      "matches": ["*://el.etfbl.net/*"],
+      "css": ["dark.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://efee.etf.unibl.org/raspored*"],
+      "css": ["raspored.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://etf.unibl.org/*"],
+      "css": ["etf.css"],
       "js": ["content.js"],
       "run_at": "document_start"
     }

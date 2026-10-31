@@ -112,34 +112,8 @@ nav.fixed-top .nav-link:hover {
    4. LISTA KURSEVA
    ========================================================================== */
 .coursebox {
-    border: 1px solid #2a2a2a !important;
     margin-bottom: 8px !important;
     padding: 12px !important;
-    border-radius: 6px !important;
-    transition: background-color 0.2s ease, border-color 0.2s ease !important;
-}
-
-/*  naizmjenicne nijanse */
-.coursebox.even {
-    background-color: #171717 !important;
-}
-
-.coursebox.odd {
-    background-color: #202020 !important;
-}
-
-.coursebox:hover {
-    background-color: #282828 !important;
-    border-color: #3b3b3b !important;
-}
-
-.coursebox .coursename a {
-    color: #38bdf8 !important;
-    font-weight: 600 !important;
-}
-
-.coursebox .coursename a:hover {
-    color: #7dd3fc !important;
 }
 
 .coursebox .summary,
@@ -815,42 +789,48 @@ body.pagelayout-login #modal-footer .btn-secondary:hover {
 
 /* kontejner grupe za pretragu */
 .simplesearchform .input-group {
-    border-radius: 6px !important;
+    border-radius: 0 !important;
     box-shadow: none !important;
 }
 
-/* polje za unos */
+/* polje za unos teksta pretrage */
 .simplesearchform input[type="text"].form-control,
-.simplesearchform input[data-region="input"] {
+.simplesearchform input[data-region="input"],
+.simplesearchform input[type="search"] {
     background-color: #121212 !important;
     color: #e4e4e7 !important;
     border: 1px solid #27272a !important;
     border-right: none !important;
-    border-radius: 6px 0 0 6px !important;
+    border-radius: 0 !important;
     padding: 9px 14px !important;
     font-size: 0.95rem !important;
     box-shadow: none !important;
 }
 
-/* placeholder tekst */
-.simplesearchform input[type="text"].form-control::placeholder {
+/* tekst u polju kada je prazno (placeholder) */
+.simplesearchform input[type="text"].form-control::placeholder,
+.simplesearchform input[data-region="input"]::placeholder {
     color: #9ca3af !important;
     opacity: 1 !important;
 }
 
-/* fokus na pretragu */
-.simplesearchform input[type="text"].form-control:focus {
+/* efekat fokusa na polje za pretragu */
+.simplesearchform input[type="text"].form-control:focus,
+.simplesearchform input[data-region="input"]:focus {
     border-color: #38bdf8 !important;
-    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2) !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 /* dugme za pretragu */
+.simplesearchform .input-group-append .btn,
 .simplesearchform .input-group-append .btn.search-icon,
-.simplesearchform .btn-primary {
+.simplesearchform .btn-primary,
+.simplesearchform .btn-submit {
     background-color: #38bdf8 !important;
     border: 1px solid #38bdf8 !important;
     color: #0f172a !important;
-    border-radius: 0 6px 6px 0 !important;
+    border-radius: 0 !important;
     padding: 0 16px !important;
     display: flex !important;
     align-items: center !important;
@@ -858,20 +838,320 @@ body.pagelayout-login #modal-footer .btn-secondary:hover {
     transition: all 0.15s ease-in-out !important;
 }
 
-/* ikonica lupe */
-.simplesearchform .input-group-append .btn.search-icon i,
-.simplesearchform .btn-primary i {
+/* ikonica lupe unutar dugmeta */
+.simplesearchform .input-group-append .btn i,
+.simplesearchform .btn-primary i,
+.simplesearchform .btn-submit i {
     color: #0f172a !important;
 }
 
-/* hover efekat*/
-.simplesearchform .input-group-append .btn.search-icon:hover,
-.simplesearchform .btn-primary:hover {
+/* Hover efekat na dugmetu za pretragu */
+.simplesearchform .input-group-append .btn:hover,
+.simplesearchform .btn-primary:hover,
+.simplesearchform .btn-submit:hover {
     background-color: #fb923c !important;
     border-color: #fb923c !important;
 }
 
-.simplesearchform .input-group-append .btn.search-icon:hover i,
-.simplesearchform .btn-primary:hover i {
+.simplesearchform .input-group-append .btn:hover i,
+.simplesearchform .btn-primary:hover i,
+.simplesearchform .btn-submit:hover i {
     color: #0f172a !important;
+}
+
+/* ==========================================================================
+   STILIZACIJA STRANICE KURSA I MENIJA
+   ========================================================================== */
+
+/* vanjski kontejner */
+#nav-drawer {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px 10px !important;
+}
+
+/* meni blok/kutija */
+#nav-drawer .list-group {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    margin-bottom: 15px !important;
+    box-shadow: none !important;
+}
+
+/* unutrasnje stavke u meniju */
+#nav-drawer .list-group-item {
+    background-color: transparent !important;
+    border-color: #27272a !important;
+    border-radius: 0 !important;
+    color: #e4e4e7 !important;
+}
+
+/* hover efekat na stavkama menija */
+#nav-drawer .list-group-item-action:hover:not(.active),
+#nav-drawer .list-group-item:hover:not(.active) {
+    background-color: #27272a !important;
+    color: #ffffff !important;
+}
+
+/* zaglavlje kursa */
+#page-header .card {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transition: none !important;
+}
+
+#page-header .card-body {
+    background-color: transparent !important;
+}
+
+#page-header .card:hover {
+    background-color: #18181b !important;
+    border-color: #27272a !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* glavni sadrzaj kursa */
+#region-main-box #region-main,
+#region-main {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+    padding: 24px !important;
+    box-shadow: none !important;
+}
+
+/* unutrasnji elementi glavnog sadrzaja */
+#region-main > div[role="main"],
+#region-main .course-content,
+#region-main .course-content ul.topics,
+#region-main .course-content ul.topics li.section {
+    background-color: transparent !important;
+}
+
+/* ==========================================================================
+   POZADINA I OKVIR BREADCRUMB NAVIGACIJE
+   ========================================================================== */
+
+html body #page-header #page-navbar,
+html body #page-header #page-navbar nav,
+html body #page-header .breadcrumb,
+html body #page-header .breadcrumb-item,
+html body .breadcrumb,
+html body .breadcrumb-item {
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+html body #page-header .breadcrumb {
+    padding: 0 !important;
+    margin-top: 6px !important;
+}
+
+/* ==========================================================================
+   MODALNI PROZORI I POTVRDE
+   ========================================================================== */
+
+/* uklanjanje sijenke */
+.modal-dialog,
+.moodle-dialogue,
+.moodle-dialogue-base .moodle-dialogue-wrap {
+    box-shadow: none !important;
+}
+
+/* glavni kontejner modala */
+.modal-content,
+#modal-content,
+.moodle-dialogue-wrap {
+    background-color: #18181b !important;
+    border: 2px solid #3f3f46 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #e4e4e7 !important;
+}
+
+/* zaglavlje */
+.modal-header,
+#modal-header,
+.moodle-dialogue-hd {
+    background-color: #18181b !important;
+    border-bottom: 1px solid #27272a !important;
+    border-radius: 0 !important;
+}
+
+.modal-header h4,
+.modal-header .modal-title,
+#modal-header h4 {
+    color: #f4f4f5 !important;
+    font-weight: 600 !important;
+}
+
+/* tijelo */
+.modal-body,
+#modal-body,
+.moodle-dialogue-bd {
+    background-color: #18181b !important;
+    color: #e4e4e7 !important;
+}
+
+.modal-body p,
+#modal-body p {
+    color: #e4e4e7 !important;
+}
+
+/* podnozje */
+.modal-footer,
+#modal-footer,
+.moodle-dialogue-ft {
+    background-color: #18181b !important;
+    border-top: 1px solid #27272a !important;
+    border-radius: 0 !important;
+}
+
+/* primarno (nastavi) dugme */
+.modal-footer .btn-primary,
+#modal-footer .btn-primary,
+.singlebutton .btn-primary {
+    background-color: #38bdf8 !important;
+    border: 1px solid #38bdf8 !important;
+    color: #0f172a !important;
+    border-radius: 0 !important;
+    font-weight: 600 !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.modal-footer .btn-primary:hover,
+#modal-footer .btn-primary:hover,
+.singlebutton .btn-primary:hover {
+    background-color: #fb923c !important;
+    border-color: #fb923c !important;
+    color: #0f172a !important;
+}
+
+/* sekundarno (otkazi) dugme */
+.modal-footer .btn-secondary,
+#modal-footer .btn-secondary,
+.singlebutton .btn-secondary {
+    background-color: #27272a !important;
+    border: 1px solid #3f3f46 !important;
+    color: #e4e4e7 !important;
+    border-radius: 0 !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.modal-footer .btn-secondary:hover,
+#modal-footer .btn-secondary:hover,
+.singlebutton .btn-secondary:hover {
+    background-color: #3f3f46 !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   MOODLE BLOKOVI I KARTICE
+   ========================================================================== */
+
+.block,
+.block .card,
+section.block,
+.block_html,
+.block_site_main_menu,
+.block_mycourses,
+.block-region .card {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 16px !important;
+}
+
+.block .card-header,
+.block .card-body,
+.block .card-footer,
+section.block .card-body {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+
+/* ==========================================================================
+   PADAJUCI KORISNICKI MENI
+   ========================================================================== */
+
+/* glavni kontejner */
+.dropdown-menu,
+.usermenu .dropdown-menu,
+#action-menu-0-menu,
+#action-menu-1-menu,
+#action-menu-2-menu {
+    background-color: #18181b !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 6px 0 !important;
+}
+
+/* stavke u meniju */
+.dropdown-menu .dropdown-item,
+.usermenu .dropdown-menu .dropdown-item {
+    background-color: transparent !important;
+    color: #e4e4e7 !important;
+    padding: 8px 16px !important;
+    transition: background-color 0.15s ease-in-out !important;
+}
+
+/* linkovi unutar stavki menija */
+.dropdown-menu .dropdown-item a,
+.dropdown-menu a.dropdown-item,
+.usermenu .dropdown-menu .dropdown-item a,
+.usermenu .dropdown-menu a.dropdown-item {
+    color: #e4e4e7 !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+
+/* ikonice */
+.dropdown-menu .dropdown-item i,
+.dropdown-menu .dropdown-item .icon,
+.dropdown-menu a.dropdown-item i,
+.usermenu .dropdown-menu .dropdown-item i,
+.usermenu .dropdown-menu .dropdown-item .icon {
+    color: #38bdf8 !important;
+    margin-right: 8px !important;
+}
+
+/* hover */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu a.dropdown-item:hover,
+.usermenu .dropdown-menu .dropdown-item:hover,
+.usermenu .dropdown-menu a.dropdown-item:hover {
+    background-color: #27272a !important;
+    color: #ffffff !important;
+}
+
+.dropdown-menu .dropdown-item:hover a,
+.dropdown-menu .dropdown-item:hover i,
+.dropdown-menu .dropdown-item:hover .icon,
+.usermenu .dropdown-menu .dropdown-item:hover a,
+.usermenu .dropdown-menu .dropdown-item:hover i,
+.usermenu .dropdown-menu .dropdown-item:hover .icon {
+    color: #ffffff !important;
+}
+
+/* linije razdjelnika ako postoje u meniju */
+.dropdown-menu .dropdown-divider,
+.usermenu .dropdown-menu .dropdown-divider {
+    border-top: 1px solid #27272a !important;
+    margin: 4px 0 !important;
 }

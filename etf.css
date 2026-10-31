@@ -995,3 +995,36 @@ ul.category-module {
     margin-top: 0 !important;
     padding-top: 0 !important;
 }
+
+/* ==========================================================================
+   ETF.UNIBL.ORG - Uklanjanje zaobljenosti (Zaobljene samo pojedinačne novosti)
+   ========================================================================== */
+
+/* 1. Potpuno uklanjanje zaobljenosti sa svih modula, banera i okvira */
+.moduletable,
+.moduletable *,
+.bannergroup,
+.banneritem,
+.banneritem img,
+.custom,
+.custom table,
+.custom td,
+#freeSlide_sp1_id110,
+.fs-sp1,
+.fs-sp1-content,
+.fs-sp1-inner,
+.fs-sp1-image,
+.item-page {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+
+/* 2. Zaobljeni uglovi ISKLJUČIVO za pojedinačne kartice novosti */
+.category-module.mod-list > li,
+ul.category-module > li {
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    overflow: hidden !important;
+}
