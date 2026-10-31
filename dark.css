@@ -527,170 +527,90 @@ article h2 {
    LOGIN STRANICA
    ========================================================================== */
 
-/* uklanjanje ruznog elementa za registraciju */
-body.pagelayout-login #region-main .row:has(#signup),
-body.pagelayout-login .card:has(#signup),
-body.pagelayout-login #page-footer {
-    display: none !important;
-}
-
-/* 2. eliminisanje skrolbara i centriranje */
-html,
-body.pagelayout-login {
-    overflow-x: hidden !important;
-    background-color: #121212 !important;
-}
-
-body.pagelayout-login #page-wrapper {
-    min-height: 100vh !important;
-    background-color: #121212 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 40px 20px !important;
-    box-sizing: border-box !important;
-    overflow-x: hidden !important;
-}
-
-/* glancanje kontejnera */
-body.pagelayout-login #page,
-body.pagelayout-login #page-content,
-body.pagelayout-login #region-main-box,
-body.pagelayout-login #region-main {
-    width: 100% !important;
-    max-width: 780px !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    background: transparent !important;
+/* uklanjanje spoljasnjeg okvira */
+body#page-login-index #region-main-box #region-main,
+body#page-login-index #region-main {
+    background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
-}
-
-/* kontejner fix 2 */
-body.pagelayout-login .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    overflow: visible !important;
-}
-
-/* kontejner fix 3 */
-body.pagelayout-login .col-xl-6,
-body.pagelayout-login .col-sm-8,
-body.pagelayout-login .col-12 {
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
-    width: 100% !important;
     padding: 0 !important;
-    margin: 0 !important;
 }
 
-/* cist okvir za glavni dio */
-body.pagelayout-login .card {
+/* jedinstvena kvadratna kartica logina */
+body#page-login-index .card {
     background-color: #18181b !important;
     border: 1px solid #27272a !important;
-    border-radius: 12px !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
     box-shadow: none !important;
-    margin: 0 auto !important;
-    overflow: hidden !important;
-    width: 100% !important;
 }
 
-/* naslov */
-body.pagelayout-login h1.card-header {
-    background-color: #18181b !important;
-    color: #38bdf8 !important;
-    font-weight: 700 !important;
-    font-size: 1.4rem !important;
-    border-bottom: 2px solid #27272a !important;
-    padding: 18px 24px !important;
-    text-align: center !important;
-}
-
-/* odstupanje forme */
-body.pagelayout-login .card-body {
-    padding: 28px 32px !important;
-}
-
-body.pagelayout-login .card-body .row {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 20px !important;
-}
-
-body.pagelayout-login .card-body .col-md-5 {
-    flex: 1 1 280px !important;
-    max-width: 100% !important;
-    padding: 0 !important;
-}
-
-/* tekst i natpisi */
-body.pagelayout-login .card-body,
-body.pagelayout-login .card-body * {
-    color: #e4e4e7 !important;
+body#page-login-index .card-header,
+body#page-login-index .card-body,
+body#page-login-index .card-block {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 
 /* polja za unos */
-body.pagelayout-login input[type="text"],
-body.pagelayout-login input[type="password"] {
+body#page-login-index .form-control,
+body#page-login-index input[type="text"],
+body#page-login-index input[type="password"] {
     background-color: #121212 !important;
     border: 1px solid #27272a !important;
-    color: #f3f4f6 !important;
-    border-radius: 6px !important;
-    padding: 10px 14px !important;
-    font-size: 0.95rem !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    color: #e4e4e7 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    box-shadow: none !important;
 }
 
-body.pagelayout-login input[type="text"]:focus,
-body.pagelayout-login input[type="password"]:focus {
+body#page-login-index .form-control:focus {
     border-color: #38bdf8 !important;
-    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2) !important;
+    outline: none !important;
 }
 
-/* prijava dugme */
-body.pagelayout-login #loginbtn {
+/* dugmad */
+body#page-login-index .btn,
+body#page-login-index #loginbtn,
+body#page-login-index #loginguestbtn,
+body#page-login-index #signup .btn {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* glavno (prijava) dugme */
+body#page-login-index #loginbtn {
     background-color: #38bdf8 !important;
-    border-color: #38bdf8 !important;
+    border: 1px solid #38bdf8 !important;
     color: #0f172a !important;
-    font-weight: 700 !important;
-    padding: 10px !important;
-    border-radius: 6px !important;
+    font-weight: 600 !important;
     transition: all 0.15s ease-in-out !important;
-    width: 100% !important;
 }
 
-body.pagelayout-login #loginbtn:hover {
+body#page-login-index #loginbtn:hover {
     background-color: #fb923c !important;
     border-color: #fb923c !important;
     color: #0f172a !important;
 }
 
-/* dugme za prijavu kao gost */
-body.pagelayout-login #loginguestbtn {
+/* sporedna dugmad (gost/otkazi) */
+body#page-login-index #loginguestbtn,
+body#page-login-index #signup .btn {
     background-color: #27272a !important;
-    border-color: #3f3f46 !important;
+    border: 1px solid #3f3f46 !important;
     color: #e4e4e7 !important;
-    border-radius: 6px !important;
-    padding: 8px !important;
     transition: all 0.15s ease-in-out !important;
-    width: 100% !important;
 }
 
-body.pagelayout-login #loginguestbtn:hover {
+body#page-login-index #loginguestbtn:hover,
+body#page-login-index #signup .btn:hover {
     background-color: #3f3f46 !important;
     color: #ffffff !important;
-}
-
-/* linkovi */
-body.pagelayout-login a {
-    color: #38bdf8 !important;
-    text-decoration: none !important;
-}
-
-body.pagelayout-login a:hover {
-    color: #fb923c !important;
-    text-decoration: underline !important;
 }
 
 /* ==========================================================================
