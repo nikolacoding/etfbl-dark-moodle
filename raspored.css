@@ -4,7 +4,7 @@
 html, body, .ui-mobile-viewport, .ui-page, [data-role="page"], .ui-page-theme-a {
     background-color: #121212 !important;
     background: #121212 !important;
-    color: #e0e0e0 !important;
+    color: #e4e4e7 !important;
     text-shadow: none !important;
 }
 
@@ -18,10 +18,13 @@ html, body, .ui-mobile-viewport, .ui-page, [data-role="page"], .ui-page-theme-a 
 .ui-page-theme-a .ui-bar-inherit,
 .ui-page-theme-a .ui-header,
 .ui-page-theme-a .ui-footer {
-    background: #1a1a1a !important;
-    background-color: #1a1a1a !important;
+    background: #18181b !important;
+    background-color: #18181b !important;
     background-image: none !important;
-    border-color: #2e2e2e !important;
+    border-color: #27272a !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
     box-shadow: none !important;
     text-shadow: none !important;
 }
@@ -57,65 +60,86 @@ h1.ui-title,
 /* dugmad i dropdowni */
 .ui-select .ui-btn,
 .ui-btn,
+.ui-corner-all,
+.ui-shadow,
 #prostorija-button,
 #nastavnik-button,
 #epg-button,
 #ep-button,
 select {
-    background-color: #242424 !important;
-    color: #e0e0e0 !important;
-    border: 1px solid #3b3b3b !important;
+    background-color: #18181b !important;
+    color: #e4e4e7 !important;
+    border: 1px solid #27272a !important;
     text-shadow: none !important;
     box-shadow: none !important;
-    border-radius: 6px !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
 }
 
 .ui-select .ui-btn:hover,
 .ui-select .ui-btn:focus,
 .ui-btn:hover {
-    background-color: #2e2e2e !important;
+    background-color: #27272a !important;
     border-color: #38bdf8 !important;
     color: #ffffff !important;
 }
 
 /* padajuci meni (klik) */
 select option {
-    background-color: #1e1e1e !important;
-    color: #e0e0e0 !important;
+    background-color: #18181b !important;
+    color: #e4e4e7 !important;
 }
 
 /* ==========================================================================
    3. TABELA RASPOREDA
    ========================================================================== */
 #raspored,
-.table-bordered {
+.table-bordered,
+.table-dark {
     background-color: #121212 !important;
-    border: 1px solid #2a2a2a !important;
-    color: #e0e0e0 !important;
+    border: 1px solid #27272a !important;
+    color: #e4e4e7 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
 }
 
 /* zaglavlje tabele (pon-ned) */
 #raspored thead td,
 #raspored thead th {
-    background-color: #1a1a1a !important;
+    background-color: #18181b !important;
     color: #38bdf8 !important;
     font-weight: bold !important;
-    border: 1px solid #2a2a2a !important;
+    border: 1px solid #27272a !important;
     text-align: center !important;
 }
 
-/* naizmjenicni redovi */
-#raspored tbody tr:nth-child(even) td {
-    background-color: #171717 !important;
-}
-
+/* naizmjenicni redovi za sve celije */
 #raspored tbody tr:nth-child(odd) td {
-    background-color: #202020 !important;
+    background-color: #18181b !important;
+    color: #d1d5db !important;
 }
 
-/* vremena */
-#raspored tbody td:first-child {
-    background-color: #181818 !important;
+#raspored tbody tr:nth-child(even) td {
+    background-color: #222226 !important;
+    color: #d1d5db !important;
+}
+
+/* fiksiranje prve kolone (vrijeme) da uvek ima parnu/neparnu pozadinu i narandzasti tekst */
+#raspored tbody tr:nth-child(odd) td:first-child,
+#raspored tbody tr:nth-child(odd) td:first-child:hover,
+#raspored tbody tr:nth-child(odd):hover td:first-child {
+    background-color: #18181b !important;
+    color: #fb923c !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+}
+
+#raspored tbody tr:nth-child(even) td:first-child,
+#raspored tbody tr:nth-child(even) td:first-child:hover,
+#raspored tbody tr:nth-child(even):hover td:first-child {
+    background-color: #222226 !important;
     color: #fb923c !important;
     font-weight: 600 !important;
     text-align: center !important;
@@ -126,32 +150,34 @@ select option {
 #raspored th,
 table td,
 table th {
-    border: 1px solid #2a2a2a !important;
-    color: #d1d5db !important;
+    border: 1px solid #27272a !important;
     font-size: 0.88rem !important;
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out !important;
 }
 
 /* ==========================================================================
-   4. HOVER HIGHLIGHT ZA REDOVE
+   4. HOVER HIGHLIGHT ZA CELIJE
    ========================================================================== */
-/* hover cijelog reda sa ID selektorom */
+/* ponistavanje ugradjenih bootstrap/jquery-mobile hover stilova nad celim redom */
 #raspored tbody tr:hover td,
-table tr:hover td,
-.table tr:hover td,
-[data-role="table"] tr:hover td {
-    background-color: #1e2530 !important; /* Suptilna tamno-plava nijansa */
+.table-dark tbody tr:hover td,
+.table-hover tbody tr:hover td {
+    background-color: inherit;
+    color: inherit;
+}
+
+#raspored td::after,
+#raspored th::after {
+    display: none !important;
+}
+
+/* hover efekat iskljucivo nad pojedinacnom aktivnom celijom (osim prve kolone) */
+#raspored tbody td:not(:first-child):hover {
+    background-color: rgba(56, 189, 248, 0.15) !important;
     color: #ffffff !important;
 }
 
-/* posebno prilagodjavanje prve kolone (sat) tokom hovera nad redom */
-#raspored tbody tr:hover td:first-child {
-    background-color: #262d3a !important;
-    color: #fb923c !important;
-}
-
-/* linkovi unutar reda na hover */
-#raspored tbody tr:hover td a,
-table tr:hover td a {
+/* linkovi unutar celije na hover */
+#raspored tbody td:not(:first-child):hover a {
     color: #fb923c !important;
 }
